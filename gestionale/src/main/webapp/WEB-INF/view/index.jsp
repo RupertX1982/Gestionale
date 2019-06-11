@@ -8,9 +8,9 @@
 </head>
 <body>
 
-<h1>Welcome Page</h1>
+<h1>Gestionale</h1>
 
-<a href="inserimentoUtente"> clicca qui per inserire</a>
+<a href="inserimentoUtente"> inserisciUtente</a>
 
 
 
