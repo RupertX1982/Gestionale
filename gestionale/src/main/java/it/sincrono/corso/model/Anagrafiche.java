@@ -10,8 +10,25 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table
+@Table(name="Anagrafiche")
 public class Anagrafiche {
+
+	public Anagrafiche() {
+		super();
+	}
+
+
+	public Anagrafiche(String idAnagrafico, String luogoDiNascita, String residenza, String nome, String cognome,
+			char sesso, Date dataNascita) {
+		super();
+		this.idAnagrafico = idAnagrafico;
+		this.luogoDiNascita = luogoDiNascita;
+		this.residenza = residenza;
+		this.nome = nome;
+		this.cognome = cognome;
+		this.sesso = sesso;
+		this.dataNascita = dataNascita;
+	}
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -66,7 +83,31 @@ public class Anagrafiche {
 	public void setDataNascita(Date dataNascita) {
 		this.dataNascita = dataNascita;
 	}
+	
+	@Column(name="luogoDiNascita")
+	private String luogoDiNascita;
+	
+	@Column(name="residenza")
+	private String residenza;
 
+	public String getLuogoDiNascita() {
+		return luogoDiNascita;
+	}
+
+
+	public void setLuogoDiNascita(String luogoDiNascita) {
+		this.luogoDiNascita = luogoDiNascita;
+	}
+
+
+	public String getResidenza() {
+		return residenza;
+	}
+
+
+	public void setResidenza(String residenza) {
+		this.residenza = residenza;
+	}
 
 	@Column(name="nome")
 	private String nome;

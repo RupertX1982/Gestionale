@@ -16,6 +16,14 @@ public class MainController {
 		return "index";
 	}
 	
+
+@RequestMapping("inserimentoUtente")
+
+	public String getInserimentoUtente(Model m) {
+	
+	
+	return "other/inserimentoUtente";
+}
 }
 
 

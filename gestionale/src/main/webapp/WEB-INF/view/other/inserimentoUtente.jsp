@@ -4,23 +4,11 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Home Page</title>
+<title>Insert title here</title>
 </head>
 <body>
 
-<h1>Welcome Page</h1>
-
-<a href="inserimentoUtente"> clicca qui per inserire</a>
-
-
-
-
-
-
-
-
-
-
+<h1>Inserisci utente</h1>
 
 </body>
 </html>
